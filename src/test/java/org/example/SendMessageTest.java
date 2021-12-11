@@ -1,6 +1,8 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class SendMessageTest {
 
     @Test
+    @Epic("logged in user")
+    @Feature("отправка сообщений")
     public void sendMessage() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("incognito");

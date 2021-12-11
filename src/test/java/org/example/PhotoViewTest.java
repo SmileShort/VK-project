@@ -1,6 +1,8 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class PhotoViewTest {
 
     @Test
+    @Epic("logged in user")
+    @Feature("просмотр 3-х фто")
     public void viewPhoto() {
 
         ChromeOptions chromeOptions = new ChromeOptions();

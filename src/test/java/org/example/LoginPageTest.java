@@ -1,6 +1,8 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class LoginPageTest {
 
     @Test
+    @Epic("authorization")
+    @Feature("проверка авторизации")
     public void logIn(){
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("incognito");

@@ -1,11 +1,12 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -14,6 +15,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class FriendViewTest {
 
     @Test
+    @Epic("logged in user")
+    @Feature("просмотр страницы друга (Лир)")
     public void friendView() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("incognito");
